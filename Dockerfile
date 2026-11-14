@@ -1,6 +1,6 @@
 # ====== build args는 반드시 FROM보다 위에 선언 ======
-ARG BUILDER_IMAGE=gradle:7.6.0-jdk17
-ARG RUNTIME_IMAGE=amazoncorretto:17.0.7-alpine
+ARG BUILDER_IMAGE=gradle:8.14.3-jdk21
+ARG RUNTIME_IMAGE=eclipse-temurin:21-jre
 
 # ============ (1) Builder ============
 FROM ${BUILDER_IMAGE} AS builder
